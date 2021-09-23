@@ -1,14 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Details from './pages/Details';
-import main from './pages/Main';
+import Main from './pages/Main';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={ main } />
+        <Route exact path="/" component={ Main } />
         <Route exact path="/details/:id" component={ Details } />
       </Switch>
     </BrowserRouter>
